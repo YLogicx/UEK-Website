@@ -1,3 +1,9 @@
 body {
     font-family: satoshi;
 }
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
