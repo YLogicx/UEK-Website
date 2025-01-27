@@ -23,6 +23,12 @@ body {
     font-size: 25px;
   }
   
+  #bac {
+    font-weight: bolder;
+    margin-right: 1150px;
+    font-size: 32px;
+  }
+
   main {
     display: flex;
     flex-wrap: wrap;
@@ -56,9 +62,10 @@ body {
     margin: 20px;
     padding: 20px;
     text-align: center;
-    width: 300px;
-    height: 300px;
+    width: calc(30% - 20px);
+    height: 400px;
     transition: 0.3s ease-in-out;
+    
   }
 
   .mode:hover {
