@@ -29,6 +29,13 @@ body {
     font-size: 32px;
   }
 
+  .main_title {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: bolder;
+  }
+
   main {
     display: flex;
     flex-wrap: wrap;
@@ -55,6 +62,15 @@ body {
     text-decoration: none;
   }
   
+.active {
+    text-decoration: underline;
+    color: #ed61fa;
+}
+
+.active:hover {
+    color: white;
+    text-decoration: none;
+}
   
   .mode {
     background-color: #ed61fa;
@@ -63,7 +79,7 @@ body {
     padding: 20px;
     text-align: center;
     width: calc(30% - 20px);
-    height: 400px;
+    height: 300px;
     transition: 0.3s ease-in-out;
     
   }
@@ -79,10 +95,6 @@ body {
     height: auto;
   }
 
-  .mode img {
-    max-width: 80%;
-    height: auto;
-  }
 
 .more a {
     text-decoration: underline;
@@ -90,9 +102,79 @@ body {
 }
   
   footer {
+    display: flex;
+    justify-content: space-around;
     background-color: #8a18bb;
     color: white;
     padding: 20px;
-    text-align: center;
     bottom: 0;  
+  }
+
+footer a {
+    text-decoration: none;
+    color: #F7DFFF;
+}
+
+.map {
+    background-color: #ed61fa;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    width: calc(30% - 20px);
+    height: 500px;
+    transition: 0.3s ease-in-out;
+    
+  }
+
+  .map:hover {
+    background-color: rgb(202, 29, 236);
+    box-shadow: inset 0px 0px 15px #561a5c;
+    transform: scale(0.95);
+  }
+  
+  .map img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .section {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .section h2 {
+    font-size: 24px; /* Adjust font size as needed */
+    margin-bottom: 10px; /* Add spacing between heading and mode */
+  }
+
+  .game-mode {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px; 
+  }
+  
+  .game-mode h2 {
+    font-size: 24px;
+    margin-bottom: 10px; 
+  }
+  
+  .map {
+    background-color: #ed61fa;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 300px; /* Adjust width as needed */
+  }
+  
+  .map img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .map p {
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 5px;
   }
