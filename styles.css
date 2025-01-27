@@ -1,9 +1,80 @@
 body {
     font-family: satoshi;
-}
+    margin: 0;
+    background-color: #F7DFFF;
+  }
+  
+  header {
+    background-color: #8a18bb;
+    color: white;
+    padding: 20px;
+    display: flex; /* Use flexbox for better alignment */
+    justify-content: space-between; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+  }
+  
+  header img {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+  }
 
-.header {
+  header nav ul li {
+    font-size: 25px;
+  }
+  
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-grow: 1;
+  }
+  
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-}
+  }
+  
+  nav li {
+    margin: 0 20px;
+    align-self: flex-end;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  
+  .map {
+    background-color: #ed61fa;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+  }
+  
+  .map img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  #seemore {
+    color: #8a18bb;
+    text-align: center;
+  }
+  
+  footer {
+    background-color: #8a18bb;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: fixed; /* Make the footer fixed */
+    bottom: 0; /* Position it at the bottom of the viewport */
+    width: 100%; /* Make it span the full width of the viewport */
+  }
