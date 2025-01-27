@@ -50,31 +50,42 @@ body {
   }
   
   
-  .map {
+  .mode {
     background-color: #ed61fa;
     border-radius: 10px;
     margin: 20px;
     padding: 20px;
     text-align: center;
     width: 300px;
+    height: 300px;
+    transition: 0.3s ease-in-out;
+  }
+
+  .mode:hover {
+    background-color: rgb(202, 29, 236);
+    box-shadow: inset 0px 0px 15px #561a5c;
+    transform: scale(0.95);
   }
   
-  .map img {
+  .mode img {
     max-width: 100%;
     height: auto;
   }
-  
-  #seemore {
-    color: #8a18bb;
-    text-align: center;
+
+  .mode img {
+    max-width: 80%;
+    height: auto;
   }
+
+.more a {
+    text-decoration: underline;
+    color: #8a18bb;
+}
   
   footer {
     background-color: #8a18bb;
     color: white;
     padding: 20px;
     text-align: center;
-    position: fixed; /* Make the footer fixed */
-    bottom: 0; /* Position it at the bottom of the viewport */
-    width: 100%; /* Make it span the full width of the viewport */
+    bottom: 0;  
   }
