@@ -83,7 +83,7 @@ body {
     padding: 20px;
     text-align: center;
     width: calc(30% - 20px);
-    height: 300px;
+    height: auto;
     transition: 0.3s ease-in-out;
     
   }
