@@ -33,6 +33,11 @@ body {
     justify-content: flex-start;
   }
 
+  .logotext {
+    display: flex;
+    justify-content: flex-start;
+  }
+
   .main_title {
     display: flex;
     justify-content: center;
@@ -198,4 +203,15 @@ footer a {
         display: flex;
         flex-wrap: wrap;
     }
+}
+
+.main-section {
+  opacity: 0;
+  transform: translateY(-20px); /* Add a slight upward translation for initial offset */
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; /* Set transition duration and easing */
+}
+
+.main-section.loaded {
+  opacity: 1;
+  transform: translateY(0); /* Reset the translation */
 }
