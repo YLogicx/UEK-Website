@@ -24,9 +24,13 @@ body {
   }
   
   #bac {
-    font-weight: bolder;
-    margin-right: 1150px;
-    font-size: 32px;
+      font-weight: bolder;
+      font-size: 32px;
+  }
+
+  nav {
+    display: flex;
+    justify-content: flex-start;
   }
 
   .main_title {
@@ -122,7 +126,7 @@ footer a {
     padding: 20px;
     text-align: center;
     width: calc(30% - 20px);
-    height: 500px;
+    height: 500px;  
     transition: 0.3s ease-in-out;
     
   }
@@ -149,9 +153,6 @@ footer a {
   }
 
   .game-mode {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     margin: 20px; 
   }
   
@@ -165,7 +166,8 @@ footer a {
     border-radius: 10px;
     padding: 20px;
     text-align: center;
-    width: 300px; /* Adjust width as needed */
+    width: auto;
+    height: auto;
   }
   
   .map img {
@@ -178,3 +180,15 @@ footer a {
     font-size: 25px;
     margin-top: 5px;
   }
+
+  .maps {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+.game-mode h2 {
+  font-size: 40px;
+  text-align: center;
+  font-weight: bolder;
+}
