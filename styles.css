@@ -230,6 +230,7 @@ main a {
   flex-direction: column;
   height: 400px;
   justify-content: space-between;
+  align-items: center;
 }
 
 .pkmain {
@@ -271,6 +272,17 @@ main a {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.bwlogo {
+  width: 200px;
+  align-self: center;
+}
+
+.drafttitle {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bolder;
 }
 
 @media screen and (max-width:768px) {
@@ -323,6 +335,10 @@ main a {
     justify-content: center;
   }
 
+  .pk6th {
+    margin-bottom: 20px;
+  }
+
   .imgother {
     display: flex;
   }
@@ -332,14 +348,21 @@ main a {
     flex-direction: column;
     width: auto;
     align-content: center;
+    margin-bottom: 40px;
   }
 
   .imgother {
     flex-wrap: wrap;
-    width: 300px;
+    width: 310px;
+    gap: 5px;
   }
 
   .bwother {
+    display: none;
   }
 
+  .bwlogo {
+    display: none;
+  }
+  
 }
