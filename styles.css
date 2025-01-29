@@ -157,9 +157,6 @@ footer a {
     margin-bottom: 10px; /* Add spacing between heading and mode */
   }
 
-  .game-mode {
-    margin: 20px; 
-  }
   
   .game-mode h2 {
     font-size: 24px;
@@ -187,9 +184,8 @@ footer a {
   }
 
   .maps {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
 
 .game-mode h2 {
@@ -226,93 +222,11 @@ main a {
   color: #2c043d;
 }
 
-.mappage {
-  display: flex;
-  flex-direction: column-reverse;
-}
 
-.ban1 {
+.main-section {
   display: flex;
   flex-direction: column;
-}
-
-.pick1 {
-  display: flex;
-  flex-direction: column;
-}
-
-.pick2 {
-  display: flex;
-  flex-direction: column;
-}
-
-.ban2 {
-  display: flex;
-  flex-direction: column;
-}
-
-.draft1 {
-  display: flex;
-}
-
-.draft2 {
-  display: flex;
-}
-
-.draftall{
-  display: flex;
-}
-
-.img1st {
-  display: flex;
-  width: 300px;
-  flex-wrap: wrap;
-  padding-bottom: 100px;
-}
-
-.column1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 100px;
-  width: 400px;
-}
-
-.img6th {
-  display: flex;
-  width: 300px;
-  flex-wrap: wrap;
-  padding-bottom: 100px;
-}
-
-.imgothers {
-  display: flex;
-  width: 400px;
-  flex-wrap: wrap;
-}
-
-.brawler {
-  width: 90px;
-  padding: 5px;
-}
-
-.column2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 250px;
-}
-
-.mapimg {
-  width: 100%;
-  padding-bottom: 100px;
-}
-
-.ban1, .ban2 {
-  transform: scale(0.7);
-  filter: grayscale(1);
+  gap: 550px;
 }
 
 @media screen and (max-width:768px) {
@@ -364,6 +278,10 @@ main a {
     width: 180px;
   }
 
-  .game-mode
+  .main-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
 
 }
