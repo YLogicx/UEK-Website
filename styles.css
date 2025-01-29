@@ -369,4 +369,8 @@ main a {
   display: none;
 }
 
+.main_title {
+  font-size: 35px;
+}
+
 }
